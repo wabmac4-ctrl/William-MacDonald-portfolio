@@ -1,8 +1,7 @@
-
 *::after {
   box-sizing: border-box;
 }
-
+/* basic color variables*/
 :root {
     
     --card-bg: #ffffff;  
@@ -12,12 +11,12 @@
     --font-main: 'Roboto', sans-serif;
 }
 
-
+/* how toy scroll*/
 html {
     scroll-behavior: smooth;
 }
 
-
+/* how alot of the boring basic stuff is styled like the body text, hover over text, some image behavior, header/ nav behavior and looks*/
 body {
     margin: 0;
     padding: 0;
@@ -36,12 +35,9 @@ img {
     max-width: 60%; 
     width: 200px; 
     height: auto;
-    
     margin: 0 auto; 
-    
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    
     display: block; 
 }
 
@@ -93,7 +89,7 @@ header {
 }
 
 
-
+/* button stuff*/
 .button {
 background-color: var(--accent-color);
 color: #fff;
@@ -116,7 +112,7 @@ background-color: var(--hover-color);
 transform: translateY(-3px);
 }
 
-
+/* main image*/
 .portrait-container {
  
     border: 3px solid var(--accent-color); 
@@ -141,7 +137,7 @@ h1 {
 }
 
 
-
+/* other images*/
 .street-reflection-img {
     max-width: 250px;
     max-height: 250px; 
@@ -159,7 +155,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
+/* section list and H2 behaviors*/
 section {
     
     width: 100%; 
@@ -207,7 +203,7 @@ footer {
     color: var(--text-color); 
 }
 
-
+/* contact for styleing and function possibly a bit broken?*/
 .contact-form label {
     display: block;
     margin-bottom: 5px;
@@ -245,8 +241,8 @@ footer {
 }
 
 
-
-.intentional-desktop-grid {
+/* desktop view*/
+.desktop-grid {
     display: flex; 
     flex-direction: column; 
     gap: 20px;
@@ -255,11 +251,11 @@ footer {
     grid-template-columns: 1fr 1fr;
     padding: 0 20px;
 }
-
+/* desktop funcction and finer details*/
 @media (min-width: 1024px) {
     
    
-.intentional-desktop-grid {
+.desktop-grid {
     display: flex; 
     flex-direction: column; 
     gap: 20px;
@@ -271,7 +267,7 @@ footer {
 
 @media (min-width: 1024px) {
     
-    .intentional-desktop-grid {
+    .desktop-grid {
         display: grid; 
         grid-template-columns: 1fr 1fr 1fr; 
         gap: 40px; 
